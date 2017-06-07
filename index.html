@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="https://joshfjohnston.com/static/css/materialize.min.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <style media="screen">
+      @font-face {
+        font-family: 'MyWebFont';
+        src: url('https://joshfjohnston.com/static/fonts/Courgette.woff2') format('woff2');
+      }
+
+      /* fallback */
+      @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Material Icons'), local('MaterialIcons-Regular'), url('https://joshfjohnston.com/static/fonts/materialize-font-icons.woff2') format('woff2');
+      }
+
+      .valign {
+        margin-top: 15%;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      .card-content {
+        height: 180px;
+      }
+
+      #quote {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+      }
+
+      #author {
+        position: absolute;
+        bottom: 100px;
+        right: 25px;
+      }
+
+      footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: .1rem;
+        background-color: #37474f;
+        color: #bdbdbd;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script defer src="https://joshfjohnston.com/static/js/jquery-3.1.0.min.js"></script>
+    <script defer src="https://joshfjohnston.com/static/js/materialize.min.js"></script>
+    <script async defer src="/static/bundle.js"></script>
+  </body>
+</html>
